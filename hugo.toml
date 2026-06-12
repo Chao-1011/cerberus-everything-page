@@ -1,0 +1,85 @@
+# ==================== 基础设置 ====================
+baseURL = 'https://Chao-1011.github.io/cerberus-everything-page/'
+locale = 'zh-cn'
+title = '我的个人网站'
+theme = 'PaperMod'
+
+# ==================== 构建选项 ====================
+enableRobotsTXT = true
+enableEmoji = true
+hasCJKLanguage = true                          # 中文关键词提取优化
+
+# ==================== 菜单 ====================
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 20
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 30
+
+# ==================== PaperMod 参数 ====================
+[params]
+  # --- 首页 profile 模式 ---
+  [params.profileMode]
+    enabled = true
+    title = "你好，我是 Chao 👋"
+    subtitle = "写点东西，记录生活。"
+    # imageUrl = "/avatar.jpg"                  # 头像图片放 static/ 下
+    # imageTitle = "avatar"
+
+  # --- 日间/夜间模式 ---
+  defaultTheme = "auto"                        # auto / light / dark
+  disableThemeToggle = false
+
+  # --- 社交链接 ---
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Chao-1011"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:yuchaoshui07@gmail.com"
+  # [[params.socialIcons]]
+  #   name = "twitter"
+  #   url = "https://twitter.com/xxx"
+
+  # --- SEO ---
+  keywords = ["个人网站", "博客", "技术"]
+  description = "欢迎来到我的个人网站，记录技术、生活和思考。"
+
+  # --- 文章页面 ---
+  showReadingTime = true
+  showShareButtons = true
+  showPostNavLinks = true
+  showBreadCrumbs = true
+  showCodeCopyButtons = true
+  showToc = true                               # 文章目录
+
+  # --- 首页文章列表 ---
+  [params.homeInfoParams]
+    Title = "欢迎来访"
+    Content = "这里记录了我的项目、文章和日常思考，随便逛逛。"
+
+  # --- 搜索 ---
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+  # --- 页脚 ---
+  hideFooter = false
+  hideCopyright = false
+  # Since 2026 Chao
